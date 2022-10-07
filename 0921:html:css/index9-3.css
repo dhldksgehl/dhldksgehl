@@ -1,0 +1,42 @@
+.container {
+  width: 800px;
+  height: 400px;
+  background: #ccc;
+
+  display: flex;
+  /* flex-direction: column-reverse; */
+  /* justify-content: space-evenly; */
+  align-items: stretch;
+}
+
+h1 {
+  text-align: center;
+}
+
+.items{
+  text-align: center;
+  font-size: 20px;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.item1{
+  background: red;
+}
+
+.item2{
+  background: orange;
+}
+
+.item3{
+  background: yellow;
+}
+
+.item4{
+  background: green;
+}
+
+.item5{
+  background: blue;
+}

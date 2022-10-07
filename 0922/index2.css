@@ -1,0 +1,38 @@
+h1{
+  text-align: center;
+  padding: 30px;
+  font-size: 28px;
+}
+
+
+div{
+  position: relative;
+}
+
+img{
+  height: 300px;
+  width: 500px;
+  position:absolute;
+}
+
+.beach1{
+  top: 350px;
+  left: 200px;
+  z-index: 3;
+  transform: skewy(30deg);
+}
+
+.beach2{
+  top: 350px;
+  left: 500px;
+  z-index: 2;
+  transform: skewy(30deg);
+
+}
+
+.beach3{
+  top: 350px;
+  left: 800px;
+  z-index: 1;
+  transform: skewy(30deg);
+}

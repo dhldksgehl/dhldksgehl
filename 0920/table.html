@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table 태그</title>
+</head>
+<body>
+  <h1>가격표</h1>
+  <table border="1" cellspacing="5" cellpadding="10">
+    <tr>
+      <th>메뉴</th>
+      <th>가격</th>
+      <th>비고</th>
+    </tr>
+    <tr>
+      <td>국물떡볶이</td>
+      <td>5,000원</td>
+      <td>2인 이상 주문 가능</td>
+    </tr>
+    <tr>
+      <td>튀김</td>
+      <td>3,000원</td>
+      <td>맛있어요</td>
+    </tr>
+    <tr>
+      <td>닭꼬치</td>
+      <td>2,000원</td>
+      <td>짱맛있어요</td>
+    </tr>
+  </table>
+
+  <h1>가격표</h1>
+  <table border="1" cellspacing="5" cellpadding="10">
+    <tr>
+      <th>메뉴</th>
+      <th>가격</th>
+      <th>비고</th>
+    </tr>
+    <tr>
+      <td>국물떡볶이</td>
+      <td>5,000원</td>
+      <td>2인 이상 주문 가능</td>
+    </tr>
+    <tr>
+      <td>튀김</td>
+      <td rowspan="2">3,000원</td>
+      <td>맛있어요</td>
+    </tr>
+    <tr>
+      <td>닭꼬치</td>
+      <!-- <td>3,000원</td> -->
+      <td>짱맛있어요</td>
+    </tr>
+    <tr>
+      <td colspan="3">순대</td>
+    </tr>
+  </table>
+</body>
+</html>

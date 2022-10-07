@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CDN Link (css) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1>Bootstrap Layout</h1>
+
+  <!-- 반응형 웹
+      - 다양한 기기의 화면에 따라 유동적으로 디스플레이가 변환되는 페이지
+    ex. bootstrap 사이트
+  
+    vs. 적응형 웹
+      - 기기의 종류에 따라 그에 맞는 템플렛을 제공
+    ex. 네이버 (PC용 화면 www.naver.com / 모바일용화면 m.naver.com) -->
+
+  <!-- container
+      - 가장 기본적인 레이아웃 요소
+      - grid system에 사용됨
+  -->
+  <h2 class="text-center">container</h2>
+
+  <div class="container bg-danger">container</div>
+  <div class="container-fluid bg-primary mt-1">container-fluid</div>
+
+  <!-- 
+    grid
+    : bootstrap의 레이아웃 크기를 유동적으로 변하게 해주는 기능
+    .container -> .row 
+    - col : 각 중단점에 대해서 col 클래스 개수 만큼 모든 열의 너비를 동일하게 차지
+    - col-{size} : 12개의 
+    
+
+    tip! 요소의 크기, 여백 파악이 어렵다. => 배경색상 넣기 (background-color, bg-{color})
+   -->
+
+
+   <h2 class="text-center">grid</h2>
+
+   <div class="container">
+    <div class="row text-bg-danger">col</div>
+    <div class="row text-bg-warning">col</div>
+    <div class="row text-bg-drak">col</div>
+   </div>
+	
+
+   <div class="container">
+    <div class="row text-bg-dark">
+      <div class="col-4 text-bg-danger">col</div>
+      <div class="col-4 text-bg-primary">col</div>
+      <div class="col-4 text-bg-success">col</div>
+    </div>
+   </div>
+
+
+   <!-- 브라우저 사이즈에 맞게
+      화면 사이즈에 따라
+      - -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8 col-md-4 col-xl-10 bg-primary">col</div>
+        <div class="col-4 col-md-8 col-xl-2 bg-warning">col</div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+    </div>
+  <!-- CDN Link (js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카페음료 주문 테이블</title>
+  <style>
+    td, th{
+      padding: 10px 50px;
+      text-align: center;
+      border: 1px solid black;
+    }
+    table{
+      border-spacing: 0;
+    }
+    h1{
+      color: green;
+      font-size: 30px;
+      width:800px;
+      text-align: center;
+    }
+    td:last-child{
+      padding: 0;
+    }
+
+    img{
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>스타벅스</h1>
+  <table>
+    <tr>
+      <th>구분</th>
+      <th>음료</th>
+      <th>가격</th>
+      <th>이미지</th>
+    </tr>
+    <tr>
+      <td rowspan="2">에스프레소</td>
+      <td>커피</td>
+      <td>2500</td>
+      <td>
+        <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=25">
+          <img src="./image/drink1.jpg" alt="음료이미지">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>아이스 화이트 초콜릿 모카</td>
+      <td>2500</td>
+      <td>
+        <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=9200000002081">
+          <img src="./image/drink2.jpg" alt="음료이미지">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3">블랜디드</td>
+      <td>망고 패션 후르츠 블랜디드</td>
+      <td>3000</td>
+      <td>
+        <img src="./image/drink3.jpg" alt="음료이미지">
+      </td>
+    </tr>
+    <tr>
+      <td>딸기 딜라이트 요거트 블랜디드</td>
+      <td>4000</td>
+      <td>
+        <img src="./image/drink4.jpg" alt="음료이미지">
+      </td>
+    </tr>
+    <tr>
+      <td>제주 그린 한라봉 모히또 블랜디드</td>
+      <td>4000</td>
+      <td>
+        <img src="./image/drink5.jpg" alt="음료이미지">
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

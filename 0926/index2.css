@@ -1,0 +1,17 @@
+p{
+  position: relative;
+  animation: moveP 2s ease;
+}
+
+@keyframes moveP{
+  from{
+    left: 100vw;
+    width: 300%;
+  }
+
+  to{
+    left: 0;
+    width: 100%;
+  }
+}
+

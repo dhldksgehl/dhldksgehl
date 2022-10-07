@@ -1,0 +1,65 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+div{
+  color: blue;
+  background: linear-gradient(70deg, yellow, pink);
+
+  /* 폰트 */
+  /* [font-size] px 단위 */
+  /* 1px: 1/96인치 -> 절대단위 */
+  font-size: 50px;
+
+  /* [font-weight] 굵기 */
+  /* lighter normal bold bolder */
+  font-weight: 700;
+
+  /* [font-family] 글씨체 */
+  font-family: 'Courier New', Courier, monospace;
+  /* monospace>가독성+, cursive>필기체(궁서체) */
+
+  /* 영어, 한글글꼴 다르게 - 한글 없는 폰트를 먼저 작성 -> 한글 폰트 */
+  font-family: Georgia, 'Mono';
+
+  /* [웹폰트] */
+  /* :모든 사용자가 동일한 폰트로 화면을 볼 수 있음 */
+  /* google font */
+
+  /* [font-style] 글자모양 */
+  /* italic:필기체, oblique:보통모양의 기울임 */
+
+  /* 크기 */
+  width: 600px;
+  height: 300px;
+
+  /* 테두리, 경계선 */
+  /* style을 지정해야 -> width, color의 의미가 있음 */
+  /* solid, doted, dashed, inset */
+  border-style: solid;
+  border-width: 4px;
+  border-color: limegreen;
+
+  /* border: width, style, color 한번에 설정 */
+  border: 10px solid black;
+
+  /* 한쪽만 테두리를 만들고싶을떄! */
+  border-right: 2px solid beige;
+
+  /* 박스모델 */
+  /* content -> padding -> border -> margin */
+  /* box-sizing: contnet-box */
+
+  /* margin, padding */
+
+
+  /* box-shadow : xoffset yoffset blur color */
+  box-shadow: 10px 10px 10px 10px rgba(30, 03, 23, 0.2);
+  /* text-shadow */
+  text-shadow: 1px 3px 5px blue;
+}
+
+h1{
+  font-family: 'Bungee Spice', cursive;
+}

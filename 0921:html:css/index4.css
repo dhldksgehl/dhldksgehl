@@ -1,0 +1,183 @@
+/* 
+
+  단일선택자
+  -전체: *{}
+  -태그: 태그명{}
+  -클래스: .클래스명{}
+  -아이디: #아이디명{}
+
+*/
+
+/* *{
+  color: #222;
+}
+
+li{
+  color:red;
+}
+
+div.orange{
+  color: blue;
+} */
+
+/* ul,
+p,
+.orange{
+  color: green;
+} */
+
+/* 
+
+  복합 형제 선택자
+  -하위: A B
+  -자식: A > B
+  -인접형제: A + B
+  -일반형제: A ~ B
+
+*/
+
+
+/* 하위선택자 */
+div .orange {
+  color: orange;
+}
+
+/* 자식선택자 */
+ul>.orange {
+  color: red;
+}
+
+/*
+  인접형제선택자 
+  A + B
+  조건 1. A, B 같은 레벨
+  조건 2. B가 A의 바로 뒤에***
+*/
+
+ul+.orange {
+  color: green;
+}
+
+/* 조건2에 위배되어 적용되지않음 */
+ul+span.orange {
+  color: blue;
+}
+
+/* 
+  일반 형제 선택자
+  A ~ B
+  조건 1. A와 B 같은 레벨
+  조건 2. B는 A보다 뒤에 위치
+*/
+
+div.orange~span {
+  color: royalblue;
+}
+
+/* 조건2에 위배되어 적용되지않음 */
+div.orange~ul {
+  color: royalblue;
+}
+
+/* 
+  가상선택자
+  -E:hover: E 요소에 마우스가 올라가 있는 동안
+  -E:active: E 요소에 마우스를 클릭하는 동안
+  -E:visited: E 요소가 링크일 때, 한 번 클릭해서 링크를 접속한 이력이 있을 때
+*/
+
+#google:hover {
+  font-weight: 700;
+  color: orangered;
+}
+
+#naver:active {
+  font-weight: 700;
+  color: palevioletred;
+}
+
+#daum:visited {
+  color: gray;
+}
+
+.fruits span:first-child {
+  color: red;
+}
+
+/* p태그가 .fruits에 첫번째 자식이 아니기때문에 적용이 되지않음 */
+.fruits p:first-child {
+  color: rebeccapurple;
+}
+
+.fruits h3:last-child {
+  color: rebeccapurple;
+}
+
+
+/* 괄호안에 공식을 이용해서 선택할수있다 */
+.fruits *:nth-child(2n-1) {
+  color: green;
+}
+
+.fruits *:not(span) {
+  color: blue;
+}
+
+.number{
+  font-size: 40px;
+}
+
+
+/* 홀수 */
+.number span:nth-child(odd){
+  color: green;
+}
+
+/* 짝수 */
+.number span:nth-child(even){
+  color: orange;
+}
+
+
+/* 4, 7에만 파랑입히기 */
+/* .number span:nth-child(4),
+.number span:nth-child(7){
+  color: blue;
+} */
+/* = */
+.number span:nth-child(3n+4){
+  color: blue;
+}
+/* n은 0부터시작하는 정수 */
+
+
+/* css 우선순위 */
+
+.test{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* 전체선택자 */
+.test *{
+  color: gray;
+}
+
+/* 태그 선택지 >  전체 선택지 */
+/* !important >>>> *** */
+.test span{
+  color: blue !important;
+}
+
+/* 클래스 선택자 > 태그 선택자 */
+.test .num{
+  color: green;
+}
+
+/* 아이디 선택자 > 클래스 선택자 */
+.test #two{
+  color: purple;
+}
+
+
+

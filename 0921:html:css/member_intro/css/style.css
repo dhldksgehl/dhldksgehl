@@ -1,0 +1,165 @@
+/* COMMON */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:visited {
+  color: #555;
+}
+
+/* SECTION.WRAP */
+.wrap {
+  /* 다음 시간에 배우게 될 속성입니다 :) 카드를 body 태그의 정가운데 배치하는 코드예요. */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  padding: 50px 60px 30px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ARTICLE.PROFILE */
+.wrap .profile {
+  text-align: center;
+}
+
+.wrap .profile img {
+  border-radius: 100px;
+  box-shadow: 8px 10px 30px rgb(255 128 0 / 50%);
+  width: 210px;
+  height: 210px;
+}
+
+.wrap .profile h1 {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.wrap .profile p {
+  color: #888;
+  padding: 0 0 20px;
+}
+
+.wrap .profile .btnView {
+  /* 다음 시간에 배우게 될 속성입니다 :) .btnView 요소(a태그)를 block 요소로 만들어줘요 */
+  /* 블록 요소가 되었으므로 width, height 속성 사용이 가능해요. width, height 를 이용해 버튼 크기를 지정해주세요! */
+  display: block;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* UL.CONTACT */
+.wrap ul.contact{
+  padding: 25px 0 30px 10px;
+}
+
+.wrap ul.contact .line{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.wrap ul.contact .line + li{
+  padding-top: 10px;
+}
+
+.wrap ul.contact span{
+  padding: 10px;
+}
+
+.wrap .others a {
+  /* 다음 시간에 배우게 될 속성입니다 :) .others 요소 하위에 있는 a 태그들(3개)을 inline-block 요소로 만들어줘요 */
+  /* 인라인-블록 요소도 블록요소와 마찬가지로 width, height 속성 사용이 가능해요. width, height 를 이용해 버튼 크기를 지정해주세요! */
+  display: inline-block;
+}
+
+/* 다음 시간에 배우게 될 선택자입니다 :) nth-of-type() 은 가상선택자로, 몇 번째 요소인지 판단하는 요소예요. */
+/* a.on:nth-of-type(n) 은 a태그이자 .on 클래스를 갖는 n번째 요소를 선택해줍니다. */
+.wrap .others a.on:nth-of-type(1) {
+  background: rgb(242, 169, 59);
+}
+
+.wrap .others a.on:nth-of-type(2) {
+  background: rgb(83, 181, 255);
+}
+
+.wrap .others a.on:nth-of-type(3) {
+  background: rgb(238, 144, 178);
+}
+
+.wrap nav.others{
+  text-align: center;
+}
+
+.wrap nav.others a{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: #ccc;
+}
+
+.wrap nav.others a:nth-child(2){
+  margin: 0 20px;
+}
+
+
+
+/* MEMBER_1 */
+.member_1 {
+  background: rgb(255, 222, 178);
+}
+
+.member_1 .wrap .profile img {
+  box-shadow: 8px 10px 30px rgb(255 128 0 / 50%);
+}
+
+.member_1 .wrap .profile .btnView {
+  background: rgb(242, 169, 59);
+  box-shadow: 4px 5px 15px rgb(255, 128, 1, 0.6);
+}
+
+/* MEMBER_2 */
+.member_2 {
+  background: rgb(230, 254, 255);
+}
+
+.member_2 .wrap .profile img {
+  box-shadow: 8px 10px 30px rgba(125, 166, 255, 0.5);
+}
+
+.member_2 .wrap .profile .btnView {
+  background: rgb(83, 181, 255);
+  box-shadow: 4px 5px 15px rgb(125, 166, 255, 0.5);
+}
+
+/* MEMBER_3 */
+.member_3 {
+  background: rgb(251, 232, 242);
+}
+
+.member_3 .wrap .profile img {
+  box-shadow: 8px 10px 30px rgba(255, 141, 251, 0.5);
+}
+
+.member_3 .wrap .profile .btnView {
+  background: rgb(238, 144, 178);
+  box-shadow: 4px 5px 15px rgb(255, 141, 251, 0.5);
+}
