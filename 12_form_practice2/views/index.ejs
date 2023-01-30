@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습 29, 30</title>
+  <!-- axios cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <style>
+    #id {
+      display: flex;
+      flex-direction: row;
+      width: 200px;
+      height: 20px;
+    }
+
+    #id:focus,
+    #pw:focus {
+      background-color: gray;
+    }
+
+    #pw {
+      width: 200px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>동적 폼 실습</h1>
+  <hr>
+  <h2>실습29. axios get 회원가입</h2>
+  <form name="register">
+    <label for="username">이름</label>
+    <input type="text" name="username" id="username">
+    <br>
+    <br>
+    <fieldset>
+      <legend>성별</legend>
+      <input type="radio" name="gender" id="male" value="male" checked>
+      <label for="male">남자</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">여자</label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>생년월일</legend>
+      <select name="birthYear" id="year">
+        <% for (let i = 0; i < 50; i++) { %>
+        <option value="<%= 2020 - i %>"><%= 2020 - i %></option>
+        <% } %>
+      </select>
+      <label for="year">년</label>
+      <select name="birthMonth" id="month">
+        <% for (let i = 0; i < 12; i++) { %>
+        <option value="<%= 1 + i %>"><%= 1 + i %></option>
+        <% } %>
+      </select>
+      <label for="month">월</label>
+      <select name="birthDay" id="day">
+        <option value="월">월</option>
+        <option value="화">화</option>
+        <option value="수">수</option>
+        <option value="목">목</option>
+        <option value="금">금</option>
+        <option value="토">토</option>
+        <option value="일">일</option>
+      </select>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>관심사</legend>
+      <input type="checkbox" name="hobby" id="travle" value="travle">
+      <label for="travle">여행</label>
+      <input type="checkbox" name="hobby" id="fashion" value="fashion">
+      <label for="fashion">패션</label>
+      <input type="checkbox" name="hobby" id="food" value="food">
+      <label for="food">음식</label>
+    </fieldset>
+    <br>
+    <button type="button" onclick="axiosGet()">회원가입</button>
+  </form>
+
+  <div class="result"></div>
+
+  <h2>실습30. axios post 로그인</h2>
+
+  <form name="login">
+    <input type="text" id="id" placeholder="id">
+    <input type="text" id="pw" placeholder="****">
+  </form>
+
+  <button type="submit">로그인</button>
+
+
+  <script>
+    const resultBox = document.querySelector('.result')
+
+    function axiosGet() {
+      console.log('###### click axiosGet ######')
+
+      const form = document.forms['register']
+      const data = {
+        name: form.name.value,
+        gender: form.gender.value,
+      };
+
+      axios({
+        method: 'GET',
+        url: '/axios',
+        parmas: data,
+      }).then(function (response) {
+        resultBox.textContent = `GET /axios 요청 완료!! ${response.data.name}님은 ${response.data.gender}이시죠?`
+        resultBox.style.color = 'green'
+      })
+    }
+  </script>
+</body>
+
+</html>

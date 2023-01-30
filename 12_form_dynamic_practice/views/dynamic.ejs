@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+
+  <!-- axios cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <style>
+    body {
+      background-color: bisque;
+    }
+
+    .result {
+      font-weight: 700;
+      font-size: 24px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1><%= title %></h1>
+
+  <hr />
+  <h2>실습29. axios get 회원가입</h2>
+  <form name="register">
+    <label for="username">이름</label>
+    <input type="text" name="username" id="username" />
+    <br />
+
+    <fieldset>
+      <legend>성별</legend>
+      <input type="radio" name="gender" id="male" value="male" checked />
+      <label for="male">남자</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">여자</label>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend>생년월일</legend>
+      <select name="birthYear" id="year">
+        <% for (let i = 0; i < 50; i++) { %>
+        <option value="<%= 2010 - i %>"><%= 2010 - i %></option>
+        <% } %>
+      </select>
+      <label for="year">년</label>
+      <select name="birthMonth" id="month">
+        <% for (let i = 1; i < 13; i++) { %>
+        <option value="<%= i %>"><%= i %></option>
+        <% } %>
+      </select>
+      <label for="month">월</label>
+      <select name="birthDay" id="day">
+        <% for (let i = 1; i < 31; i++) { %>
+        <option value="<%= i %>"><%= i %></option>
+        <% } %>
+      </select>
+      <label for="day">일</label>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend>관심사</legend>
+      <input type="checkbox" name="hobby" id="travle" value="travle" checked />
+      <label for="travle">여행</label>
+      <input type="checkbox" name="hobby" id="fashion" value="fashion" />
+      <label for="fashion">패션</label>
+      <input type="checkbox" name="hobby" id="food" value="food" />
+      <label for="food">음식</label>
+    </fieldset>
+    <br />
+
+    <button type="button" onclick="clickRegister();">회원가입</button>
+  </form>
+  <div class="register-result"></div>
+
+  <hr>
+  <h2>실습30. axios post 로그인</h2>
+  <form name="login">
+    <label for="userId">아이디</label>
+    <input type="text" id="userId" name="userId" required>
+    <label for="userPw">패스워드</label>
+    <input type="password" id="userPw" name="userPw" required>
+    <button type="button" onclick="clickLogin()">로그인</button>
+  </form>
+
+  <div class="login-result"></div>
+
+
+  <script>
+    const registerResult = document.form
+
+    function clickRegister() {
+      console.log('clickregister');
+
+      // 폼 선택하기
+      const form = document.forms['register']
+      const data = {
+        username: form.username.value,
+      };
+
+      axios({
+        method: 'GET',
+        url: '/practice29',
+        parmas: data,
+      }).then(function (res) {
+        // res: response 서버로부터 받은 응답
+        console.log(res);
+      });
+    }
+
+
+    function clickLogin() {
+      console.log('clickLogin')
+
+      // 폼 선택하기
+      const form = document.forms['.login'];
+      const data = {
+        userID: form.userID.value,
+        userPw: form.userPw.value,
+      }
+
+      console.log('1', form.userID.checkValidity());
+      console.log('1', form.userPw.checkValidity());
+
+
+      axios({
+        method: 'POST',
+        url: '/practice30',
+        data: dat,
+      }).then(function (res) {
+        console.log(res)
+      });
+    }
+  </script>
+</body>
+
+</html>
