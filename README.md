@@ -2,8 +2,7 @@
 </br>
 
 
-<span style="background:#fffdb1;">1~3주</span>
-<span style=background-color:#fff5b1;>*1주&nbsp;*<span>
+<span style="background-color:#fff5b1;">*1~3주&nbsp;*<span>
 ## 웹 프론트엔드 입문
 
 ### 이론
@@ -17,7 +16,7 @@
 </br>
 
 
-<span style="color: #2D3748; background-color: #fff5b1;">*4~8주*</span>
+<span style="color: #2D3748; background-color: #fff5b1;">*4~8주&nbsp;*</span>
 ## 웹 백엔드 입문
 
 ### 이론
@@ -31,7 +30,7 @@
 </br>
 
 
-<span style="color: #2D3748; background-color: #fff5b1;">*9~12주*</span>
+<span style="color: #2D3748; background-color: #fff5b1;">*9~12주&nbsp;*</span>
 ## 웹 백엔드 및 React
 
 ### 이론
