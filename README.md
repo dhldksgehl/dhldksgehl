@@ -1,5 +1,6 @@
 # kdt3rd-study 수업내용
 </br>
+</br>
 
 
 <span style="background-color:#fff5b1;">*1~3주&nbsp;*<span>
@@ -14,6 +15,7 @@
 ### 실습 프로젝트 
 - Bootstrap을 활용한 웹 페이지 구현
 </br>
+</br>
 
 
 <span style="color: #2D3748; background-color: #fff5b1;">*4~8주&nbsp;*</span>
@@ -27,6 +29,7 @@
 
 ### 심화 프로젝트
 - Node.js 웹 서비스 구현
+</br>
 </br>
 
 
