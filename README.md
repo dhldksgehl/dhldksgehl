@@ -3,6 +3,7 @@
 
 
 <span style="background:#fffdb1;">1~3주</span>
+<span style=background-color:#fff5b1;>*1주&nbsp;*<span>
 ## 웹 프론트엔드 입문
 
 ### 이론
