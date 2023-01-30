@@ -3,7 +3,7 @@
 
 
 <span style="background-color:#fff5b1;">*1~3주&nbsp;*<span>
-## 웹 프론트엔드 입문 *1~3주*
+## 웹 프론트엔드 입문
 
 ### 이론
 - HTML 및 CSS 입문
