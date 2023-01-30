@@ -1,0 +1,24 @@
+@import "./Practice57";
+@include animation(move1, 100px);
+@include animation(move2, 200px);
+@include animation(move3, 300px);
+
+.background {
+  div {
+    @include circle(100px, 100px);
+    &.pink {
+      background-color: $color-pink;
+      animation: move1 4s ease-in-out infinite;
+    }
+
+    &.yellow {
+      background-color: $color-yellow;
+      animation: move2 4s ease-in-out infinite;
+    }
+
+    &.green {
+      background-color: $color-green;
+      animation: move3 4s ease-in-out infinite;
+    }
+  }
+}

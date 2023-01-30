@@ -1,0 +1,30 @@
+$color-pink: pink;
+$color-yellow: yellow;
+$color-green: green;
+
+@mixin circle($w, $h) {
+  width: $w;
+  height: $h;
+  border-radius: 50%;
+}
+
+@mixin animation($name, $scale) {
+  @keyframes #{$name} {
+    from,
+    to {
+      transform: translate(0, 0);
+    }
+
+    25% {
+      transform: translateX($scale);
+    }
+
+    50% {
+      transform: translate($scale, $scale);
+    }
+
+    75% {
+      transform: translateY($scale);
+    }
+  }
+}

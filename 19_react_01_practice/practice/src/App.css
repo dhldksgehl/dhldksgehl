@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div {
+  width: 160px;
+  height: 160px;
+  border-radius: 200px;
+}
+
+div.c_1 {
+  background: rgb(58, 109, 248);
+  position: relative;
+  top: 125px;
+  left: 150px;
+}
+
+div.c_2 {
+  background: rgb(56, 89, 210);
+  position: absolute;
+  top: 230px;
+  left: 255px;
+}
+div.c_3 {
+  background: rgb(47, 47, 148);
+  position: absolute;
+  top: 325px;
+  left: 315px;
+}
+div.c_4 {
+  background: rgb(145, 185, 234);
+  position: absolute;
+  top: 325px;
+  left: 425px;
+}
+div.c_5 {
+  background: rgb(51, 127, 171);
+  position: absolute;
+  top: 335px;
+  left: 525px;
+  z-index: 2;
+}
+
+div.e_1 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 70px;
+  background: #fff;
+  top: 30px;
+  left: 20px;
+}
+
+div.e_2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #000;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+img {
+  position: relative;
+  top: 213px;
+  left: 132px;
+  z-index: 1;
+}

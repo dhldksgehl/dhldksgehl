@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>반응형 헤더</title>
+
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+  <!-- Normalize.css -->
+  <link rel="stylesheet" href="./normalize.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./practice20.css" />
+  <style>
+    div div{
+      background-color: skyblue;
+      border: 1px solid rgba(255, 0 ,0 , 0.3);
+      width: 200px;
+      height: 200px;
+      border-radius: 15px;
+
+    }
+    .wrap{
+      display: flex;
+      flex-direction: column;
+
+      width: 700px;
+      height: 700px;
+      justify-content: space-between;
+    }
+
+
+    @media (min-width :700px){
+      div div{
+        background-color: black;
+
+      }
+
+      .wrap{
+        flex-direction: row;
+        align-content: space-between;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <script>
+   
+  </script>
+</body>
+
+</html>
